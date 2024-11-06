@@ -3,7 +3,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: aliceblue;
+  background-color: rgb(232, 220, 236);
 }
 
 #app {
@@ -13,12 +13,53 @@ body {
   border-radius: 8px;
 }
 
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
 input {
   margin: 8px 0;
   padding: 8px;
 }
 
+.mostrar {
+  display: flex;
+}
+
+.esconder {
+  display: none;
+}
+
 #btn-calcular {
+  background-color: #b677b4;
+  color: #614a66;
+  padding: 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#btn-limpar {
+  background-color: #a76ba5;
+  color: #614a66;
+  padding: 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+}
+
+.mostrar {
+  display: flex;
+}
+.esconder {
+  display: none;
+}
+#btn-Limpar {
   background-color: #b677b4;
   color: #614a66;
   padding: 8px;

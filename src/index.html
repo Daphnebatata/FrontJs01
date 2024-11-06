@@ -8,19 +8,23 @@
 
   <body>
     <div id="app">
-      <h3>Calculadora 4 operaçãoes</h3>
+      <h3>Calculadora em 4 operaçãoes</h3>
       <form>
-        <input type="number" id="numero1" placeholder="Digite n°1" /> <br />
-        <input type="number" id="numero2" placeholder="Digite n°2" /> <br />
-
-        <button id="btn-calcular">Calcular</button> <br />
+        <div class="inputs">
+          <input type="number" id="numero1" placeholder="Digite n°1" /> <br />
+          <input type="number" id="numero2" placeholder="Digite n°2" /> <br />
+        </div>
+        <div class="botoes">
+          <button id="btn-calcular">Calcular</button>
+          <button id="btn-limpar">Limpar</button>
+        </div>
       </form>
 
-      <div class="resultados">
-        <p class="soma">A soma é: 10</p>
+      <div class="resultados esconder">
+        <p class="soma">A soma é: 0</p>
         <p class="subtracao">A subtração é: 0</p>
-        <p class="multiplicacao">A multiplicação é: 25</p>
-        <p class="divisao">A divisão é: 1</p>
+        <p class="multiplicacao">A multiplicação é: 0</p>
+        <p class="divisao">A divisão é: 0</p>
       </div>
     </div>
     <script src="./index.mjs" defer=""></script>

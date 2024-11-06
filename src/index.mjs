@@ -13,10 +13,16 @@ function calcular() {
   const n1 = Number(numero1.value);
   const n2 = Number(numero2.value);
   res = n1 + n2;
-soma.innerHTML = 'A soma de $(n1) e $(n2) é: $(n1+n2)';
+  resultados.classList.remove("esconder");
+  resultados.classList.add("mostrar");
+
+  soma.innerHTML = `A soma de ${n1} e ${n2} é: ${n1 + n2}`;
+  subtracao.innerHTML = `A subtração de ${n1} e ${n2} é: ${n1 - n2}`;
+  multiplicacao.innerHTML = `A multiplicação de ${n1} e ${n2} é: ${n1 * n2}`;
+  divisao.innerHTML = `A divisão de ${n1} e ${n2} é: ${n1 / n2}`;
 }
-calcular();
+
 btnCalcular.addEventListener("click", function (evento) {
-  alert("clicou");
+  evento.preventDefault();
   calcular();
-};
+});
