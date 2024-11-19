@@ -55,6 +55,7 @@ input {
 
 .mostrar {
   display: flex;
+  flex-direction: column;
 }
 .esconder {
   display: none;
